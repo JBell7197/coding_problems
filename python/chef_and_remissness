@@ -1,0 +1,12 @@
+test_cases = int(input("How many test cases?: "))
+
+for numbers in range(test_cases):
+    first_guard = int(input("How many times did the first guard see the Chef?: "))
+    second_guard = int(input("How many times did the sencond guard see the Chef?: "))
+    total_sights = first_guard + second_guard
+    if first_guard > second_guard:
+        print(first_guard, total_sights)
+    elif first_guard < second_guard:
+        print(second_guard, total_sights)
+    else:
+        print(first_guard, total_sights)
